@@ -1,6 +1,4 @@
-# MakerKit Website
-
-A clean, open-source website for the MakerKit project — built to deploy on GitHub Pages or Cloudflare Pages.
+# microfluidoscope
 
 ## File Structure
 
