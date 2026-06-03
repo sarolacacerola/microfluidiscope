@@ -16,7 +16,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  background: var(--warm-white);
+  background: var(--white);
   color: var(--ink);
   line-height: 1.65;
   font-size: 17px;
