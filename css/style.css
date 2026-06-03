@@ -4,23 +4,15 @@
    =========================== */
 
 :root {
-  --cream: #F5F0E8;
-  --warm-white: #FAF7F2;
-  --parchment: #EDE6D6;
-  --ink: #1C1A16;
-  --ink-soft: #3D3A34;
-  --brown: #6B4E35;
-  --rust: #C4622D;
-  --rust-light: #E07A49;
-  --sage: #7A8C6E;
-  --sage-light: #A3B896;
-  --gold: #C49A3C;
-  --border: rgba(107, 78, 53, 0.18);
-  --shadow: 0 4px 32px rgba(28, 26, 22, 0.1);
-  --shadow-lg: 0 12px 60px rgba(28, 26, 22, 0.15);
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Serif 4', Georgia, serif;
-  --nav-h: 68px;
+  --white: #ffffff;
+  --black: #111111;
+  --gray-light: #f5f5f5;
+  --gray-mid: #aaaaaa;
+  --gray-text: #555555;
+  --sidebar-width: 220px;
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --transition: 0.25s ease;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
