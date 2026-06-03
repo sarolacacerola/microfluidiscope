@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Component C — MakerKit</title>
+  <title>Syringe Pump — Microfluidiscope</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
@@ -11,95 +11,81 @@
 <body>
 
   <header class="nav" id="nav">
-    <a href="../index.html" class="nav-logo">MakerKit</a>
+    <a href="../index.html" class="nav-logo">Microfluidiscope</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav-links" id="navLinks">
       <a href="../index.html">Home</a>
-      <a href="component-c.html" class="active">Component C</a>
-      <a href="component-b.html">Component B</a>
-      <a href="component-c.html" class="active">Component C</a>
+      <a href="component-a.html">Base & Sorting</a>
+      <a href="component-b.html">Hydrogel</a>
+      <a href="component-c.html" class="active">Syringe Pump</a>
       <a href="workshops.html">Workshops</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Open Repository · Component C</p>
-      <h1>Module Three</h1>
-      <p>Everything you need to understand, source, and build Component C — from raw materials to finished assembly.</p>
-    </div>
-  </section>
+  <div class="component-hero-img" style="padding-top: var(--nav-h);">
+    <img src="../images/syringe_pump.png" alt="Syringe pump" />
+  </div>
 
   <section class="page-content">
-    <div class="container">
+    <div class="container comp-layout">
 
-      <div class="repo-link-box reveal">
-        <p>All files for this component — CAD, BOM, guides — are in the open repository.</p>
-        <a href="https://github.com/your-org/makerkit/tree/main/component-c" target="_blank" rel="noopener" class="github-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          View on GitHub
-        </a>
+      <div class="comp-section reveal">
+        <h1>Syringe pump</h1>
+        <p>Replace this with a short description of what this component does and why it matters. One or two sentences is enough — keep it accessible for someone encountering microfluidics for the first time.</p>
       </div>
 
-      <div class="prose">
-        <h2 class="reveal">Overview</h2>
-        <p class="reveal">Replace this with a description of what Component C is, why it matters, and how it fits into the larger MakerKit assembly. Keep it concise — a paragraph or two is plenty for an overview.</p>
+      <hr class="section-divider reveal">
 
-        <h2 class="reveal">Bill of Materials</h2>
-        <p class="reveal">List the parts and materials needed to build this component. Link to your BOM file in the GitHub repo.</p>
-        <ul class="reveal">
-          <li>Part 1 — quantity, spec, source</li>
-          <li>Part 2 — quantity, spec, source</li>
-          <li>Part 3 — quantity, spec, source</li>
-          <li>Part 4 — quantity, spec, source</li>
+      <div class="comp-section reveal">
+        <h2>Bill of Materials</h2>
+        <ul class="bom-list">
+          <li><span class="bom-item">Part 1</span><span class="bom-detail">Quantity · Spec · Where to source</span></li>
+          <li><span class="bom-item">Part 2</span><span class="bom-detail">Quantity · Spec · Where to source</span></li>
+          <li><span class="bom-item">Part 3</span><span class="bom-detail">Quantity · Spec · Where to source</span></li>
+          <li><span class="bom-item">Part 4</span><span class="bom-detail">Quantity · Spec · Where to source</span></li>
         </ul>
+      </div>
 
-        <hr class="section-divider reveal">
+      <hr class="section-divider reveal">
 
-        <h2 class="reveal">Build Steps</h2>
-        <ol class="steps-list">
-          <li class="reveal"><span>Step description here — what to do, what tools you need, and any tips or warnings for this stage of the build.</span></li>
-          <li class="reveal"><span>Step description here — what to do, what tools you need, and any tips or warnings for this stage of the build.</span></li>
-          <li class="reveal"><span>Step description here — what to do, what tools you need, and any tips or warnings for this stage of the build.</span></li>
-          <li class="reveal"><span>Step description here — what to do, what tools you need, and any tips or warnings for this stage of the build.</span></li>
+      <div class="comp-section reveal">
+        <h2>How to build it</h2>
+        <ol class="build-steps">
+          <li>
+            <strong>Step one title</strong>
+            Short description of what to do in this step.
+            <a href="https://github.com/your-org/microfluidiscope" target="_blank" rel="noopener">CAD files on GitHub</a> ·
+            <a href="https://doi.org/REPLACE_WITH_DOI" target="_blank" rel="noopener">Reference paper</a>
+          </li>
+          <li>
+            <strong>Step two title</strong>
+            Short description of what to do in this step.
+            <a href="https://github.com/your-org/microfluidiscope" target="_blank" rel="noopener">Assembly guide</a> ·
+            <a href="https://doi.org/REPLACE_WITH_DOI" target="_blank" rel="noopener">Reference paper</a>
+          </li>
+          <li>
+            <strong>Step three title</strong>
+            Short description of what to do in this step.
+            <a href="https://github.com/your-org/microfluidiscope" target="_blank" rel="noopener">Supporting files</a>
+          </li>
+          <li>
+            <strong>Step four title</strong>
+            Short description of what to do in this step.
+            <a href="https://doi.org/REPLACE_WITH_DOI" target="_blank" rel="noopener">Reference paper</a>
+          </li>
         </ol>
-
-        <h2 class="reveal">Files & Downloads</h2>
-        <p class="reveal">Link to specific files in the GitHub repo — CAD files, PDFs, schematics, firmware, etc. You can use direct GitHub download links or link to the folder.</p>
-
-        <h2 class="reveal">Notes & Contributing</h2>
-        <p class="reveal">Anything the community should know — known issues, version history, forks. If you've built this and want to contribute improvements, open a pull request in the repository.</p>
       </div>
 
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <strong>MakerKit</strong>
-          <p>Open source. Community driven.<br>Built by makers, for makers.</p>
-        </div>
-        <nav class="footer-nav">
-          <a href="../index.html">Home</a>
-          <a href="component-c.html" class="active">Component C</a>
-          <a href="component-b.html">Component B</a>
-          <a href="component-c.html" class="active">Component C</a>
-          <a href="workshops.html">Workshops</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div class="footer-github">
-          <a href="https://github.com/your-org/makerkit" target="_blank" rel="noopener" class="github-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub Repository
-          </a>
-        </div>
-      </div>
-      <p class="footer-copy">© 2025 MakerKit Project · Open Source under MIT License</p>
+  <footer class="footer footer--minimal">
+    <div class="container footer-minimal-inner">
+      <strong>Microfluidiscope</strong>
+      <a href="contact.html" class="footer-contact-btn">Contact us →</a>
     </div>
   </footer>
 
