@@ -1,6 +1,5 @@
 /* ===========================
    Microfluidiscope — style.css
-   Custom Color Edition
    =========================== */
 
 :root {
@@ -23,7 +22,6 @@
   --success: #71905c;      /* sage green */
   --pink: #9cb95b;         /* light olive for fun accents */
   
-  /* Legacy variable aliases so old markup still works */
   --ink: #1a1a1a;
   --ink-soft: #3d3d3d;
   --cream: #f9f9f9;
@@ -54,7 +52,6 @@ body {
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
-/* ---- NAV (with color pop) ---- */
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -223,14 +220,12 @@ a { color: inherit; text-decoration: none; }
   object-position: center;
 }
 
-/* ---- CONTAINER ---- */
 .container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 2.5rem;
 }
 
-/* ---- ABOUT / COMPONENTS with fun cards ---- */
 .about {
   padding: 6rem 0;
   background: var(--white);
@@ -338,7 +333,6 @@ a { color: inherit; text-decoration: none; }
 }
 .card-link:hover { color: var(--secondary); }
 
-/* ---- PARTNERS with fun styling ---- */
 .partners {
   padding: 5rem 0;
   background: linear-gradient(135deg, var(--off-white), #f5f8ef);
@@ -395,7 +389,6 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: 1px;
 }
 
-/* ---- FOOTER with brand color ---- */
 .footer--minimal {
   padding: 1.3rem 0;
   background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
@@ -432,7 +425,6 @@ a { color: inherit; text-decoration: none; }
   background: var(--primary);
 }
 
-/* Keep old .footer class working with colors */
 .footer {
   background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   color: var(--white);
@@ -481,7 +473,6 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-github .github-link:hover { background: var(--primary); border-color: var(--primary); }
 
-/* ---- INNER PAGE HERO with color ---- */
 .page-hero {
   padding: calc(var(--nav-h) + 3rem) 0 3rem;
   background: var(--white);
@@ -515,7 +506,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 
-/* ---- COMPONENT PAGE with colorful accents ---- */
 .component-hero-img {
   width: 100%;
   max-height: 480px;
@@ -566,7 +556,6 @@ a { color: inherit; text-decoration: none; }
   margin: 2.5rem 0;
 }
 
-/* ---- BOM LIST with fun alternating colors ---- */
 .bom-list {
   list-style: none;
   padding: 0;
@@ -589,7 +578,6 @@ a { color: inherit; text-decoration: none; }
 .bom-item { font-weight: 700; color: var(--primary); }
 .bom-detail { color: var(--mid-gray); font-size: 0.82rem; text-align: right; }
 
-/* ---- BUILD STEPS with colorful numbers ---- */
 .build-steps {
   list-style: none;
   counter-reset: build;
@@ -645,7 +633,6 @@ a { color: inherit; text-decoration: none; }
 }
 .build-steps li a:hover { text-decoration-color: var(--primary); }
 
-/* ---- REPO LINK BOX with colorful border ---- */
 .repo-link-box {
   background: linear-gradient(135deg, var(--off-white), #f0f5ea);
   border: 1px solid var(--border);
@@ -664,7 +651,6 @@ a { color: inherit; text-decoration: none; }
   margin: 0;
 }
 
-/* ---- PROSE with colorful links ---- */
 .prose h2 {
   font-size: 0.78rem;
   font-weight: 800;
@@ -693,7 +679,6 @@ a { color: inherit; text-decoration: none; }
 .prose a { color: var(--primary); font-weight: 700; text-decoration: underline; text-decoration-color: var(--highlight); }
 .prose a:hover { text-decoration-color: var(--primary); }
 
-/* ---- STEPS LIST (old markup) with colors ---- */
 .steps-list {
   counter-reset: steps;
   list-style: none;
@@ -724,7 +709,6 @@ a { color: inherit; text-decoration: none; }
 }
 .steps-list li span { font-size: 0.9rem; color: var(--text-gray); line-height: 1.7; }
 
-/* ---- WORKSHOPS with playful cards ---- */
 .workshops-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -761,7 +745,6 @@ a { color: inherit; text-decoration: none; }
 .workshop-card p { font-size: 0.87rem; color: var(--text-gray); line-height: 1.65; margin-bottom: 1rem; }
 .workshop-meta { font-size: 0.78rem; color: var(--primary); font-weight: 600; }
 
-/* ---- CONTACT with colorful form ---- */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -829,7 +812,6 @@ a { color: inherit; text-decoration: none; }
 .team-info strong { font-weight: 800; font-size: 0.9rem; color: var(--primary); display: block; }
 .team-info span { font-size: 0.8rem; color: var(--mid-gray); }
 
-/* ---- ANIMATIONS ---- */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -846,7 +828,6 @@ a { color: inherit; text-decoration: none; }
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ---- RESPONSIVE ---- */
 @media (max-width: 900px) {
   .components-grid { grid-template-columns: 1fr; gap: 1rem; }
   .component-card { border-right: none; border-bottom: 1px solid var(--border); }
