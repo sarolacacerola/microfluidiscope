@@ -16,10 +16,10 @@
   --highlight: #b6b416;
   --success: #71905c;
   
-  --bg-yellow: #fff9e8;
+  --bg-yellow: #e8f0fe;
   --bg-green: #f0f5ea;
-  --bg-blue: #e8f0fe;
-  --bg-peach: #fef5e8;
+  --bg-blue: #dce8fc;
+  --bg-peach: #e8f0fe;
   --bg-mint: #e8f5f0;
 
   --ink: #1a1a1a;
@@ -33,9 +33,11 @@
   --gold: #b6b416;
   --shadow-lg: 0 8px 40px rgba(0,0,0,0.08);
 
-  --font-display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Silkscreen', 'Courier New', monospace;
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -70,7 +72,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav-logo {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -93,6 +95,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--mid-gray);
   transition: all 0.2s;
   position: relative;
+  font-family: var(--font-display);
 }
 .nav-links a:hover,
 .nav-links a.active { 
@@ -148,19 +151,20 @@ a { color: inherit; text-decoration: none; }
 
 .hero-eyebrow {
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 1.2rem;
+  font-family: var(--font-display);
 }
 
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 3.5rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
@@ -192,13 +196,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--white);
   padding: 0.7rem 1.6rem;
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   align-self: flex-start;
   transition: transform 0.2s, opacity 0.2s;
   border-radius: 40px;
   box-shadow: 0 4px 12px rgba(113, 144, 92, 0.3);
+  font-family: var(--font-display);
 }
 .hero-cta:hover { 
   transform: scale(1.02);
@@ -214,6 +219,13 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
 }
 .hero-image-split img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-image-split video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -241,11 +253,12 @@ a { color: inherit; text-decoration: none; }
 }
 .about-intro h2 {
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.6rem;
+  font-family: var(--font-display);
 }
 .about-intro p {
   font-size: 0.9rem;
@@ -303,19 +316,21 @@ a { color: inherit; text-decoration: none; }
 }
 .card-tag {
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary);
   margin-bottom: 0.4rem;
+  font-family: var(--font-display);
 }
 .card-body h3 {
   font-size: 0.88rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 0.5rem;
+  font-family: var(--font-display);
 }
 .card-body p {
   font-size: 0.83rem;
@@ -327,13 +342,14 @@ a { color: inherit; text-decoration: none; }
   display: inline-block;
   margin-top: 1rem;
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary);
   border-bottom: 3px solid var(--highlight);
   padding-bottom: 2px;
   transition: color 0.2s;
+  font-family: var(--font-display);
 }
 .card-link:hover { color: var(--secondary); }
 
@@ -345,11 +361,12 @@ a { color: inherit; text-decoration: none; }
 }
 .partners h2 {
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.5rem;
+  font-family: var(--font-display);
 }
 .partners-sub {
   font-size: 0.85rem;
@@ -389,9 +406,10 @@ a { color: inherit; text-decoration: none; }
 }
 .partners-note a {
   color: var(--primary);
-  font-weight: 800;
+  font-weight: 700;
   border-bottom: 2px solid var(--highlight);
   padding-bottom: 1px;
+  font-family: var(--font-display);
 }
 
 .footer--minimal {
@@ -406,17 +424,18 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-minimal-inner strong {
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-family: var(--font-display);
 }
 .footer-contact-btn {
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--white);
@@ -424,6 +443,7 @@ a { color: inherit; text-decoration: none; }
   padding: 0.4rem 1rem;
   transition: all 0.2s;
   border-radius: 40px;
+  font-family: var(--font-display);
 }
 .footer-contact-btn:hover { 
   border-color: var(--primary);
@@ -444,13 +464,14 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-brand strong {
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 700;
   display: block;
   margin-bottom: 0.5rem;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-family: var(--font-display);
 }
 .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
 .footer-nav { display: flex; flex-direction: column; gap: 0.6rem; }
@@ -465,11 +486,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--primary);
   padding: 0.45rem 1rem;
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: all 0.2s;
   border-radius: 40px;
+  font-family: var(--font-display);
 }
 .github-link:hover { background: var(--primary); color: var(--white); }
 .footer-github .github-link {
@@ -486,15 +508,16 @@ a { color: inherit; text-decoration: none; }
 .page-hero .container { max-width: 760px; }
 .page-hero .eyebrow {
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.7rem;
+  font-family: var(--font-display);
 }
 .page-hero h1 {
   font-size: clamp(1.5rem, 3vw, 2.2rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   background: linear-gradient(135deg, var(--primary), var(--accent));
@@ -503,6 +526,7 @@ a { color: inherit; text-decoration: none; }
   color: transparent;
   margin-bottom: 0.7rem;
   line-height: 1.1;
+  font-family: var(--font-display);
 }
 .page-hero p {
   font-size: 0.9rem;
@@ -531,7 +555,7 @@ a { color: inherit; text-decoration: none; }
 
 .comp-section h1 {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   background: linear-gradient(135deg, var(--primary), var(--accent));
@@ -540,14 +564,16 @@ a { color: inherit; text-decoration: none; }
   color: transparent;
   margin-bottom: 0.9rem;
   line-height: 1.1;
+  font-family: var(--font-display);
 }
 .comp-section h2 {
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 1rem;
+  font-family: var(--font-display);
 }
 .comp-section p {
   font-size: 0.92rem;
@@ -580,7 +606,7 @@ a { color: inherit; text-decoration: none; }
 }
 .bom-list li:last-child { border-bottom: none; }
 .bom-list li:nth-child(even) { background: var(--bg-mint); }
-.bom-item { font-weight: 800; color: var(--primary); }
+.bom-item { font-weight: 700; color: var(--primary); font-family: var(--font-display); }
 .bom-detail { color: var(--mid-gray); font-size: 0.82rem; text-align: right; }
 
 .build-steps {
@@ -612,29 +638,32 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: var(--white);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   margin-top: 2px;
+  font-family: var(--font-display);
 }
 .build-steps li strong {
   color: var(--black);
-  font-weight: 800;
+  font-weight: 700;
   display: block;
   margin-bottom: 0.2rem;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  font-family: var(--font-display);
 }
 .build-steps li a {
   color: var(--primary);
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: underline;
   text-decoration-color: var(--highlight);
   font-size: 0.83rem;
+  font-family: var(--font-display);
 }
 .build-steps li a:hover { text-decoration-color: var(--primary); }
 
@@ -658,20 +687,22 @@ a { color: inherit; text-decoration: none; }
 
 .prose h2 {
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.8rem;
   margin-top: 2.5rem;
+  font-family: var(--font-display);
 }
 .prose h2:first-child { margin-top: 0; }
 .prose h3 {
   font-size: 0.88rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--black);
   margin-bottom: 0.6rem;
   margin-top: 1.5rem;
+  font-family: var(--font-display);
 }
 .prose p {
   font-size: 0.9rem;
@@ -681,7 +712,7 @@ a { color: inherit; text-decoration: none; }
 }
 .prose ul { margin: 0 0 1.2rem 1.2rem; }
 .prose ul li { font-size: 0.88rem; color: var(--text-gray); margin-bottom: 0.3rem; }
-.prose a { color: var(--primary); font-weight: 800; text-decoration: underline; text-decoration-color: var(--highlight); }
+.prose a { color: var(--primary); font-weight: 700; text-decoration: underline; text-decoration-color: var(--highlight); font-family: var(--font-display); }
 .prose a:hover { text-decoration-color: var(--primary); }
 
 .steps-list {
@@ -703,7 +734,7 @@ a { color: inherit; text-decoration: none; }
   height: 32px;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: var(--white);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 0.85rem;
   border-radius: 16px;
   display: flex;
@@ -711,6 +742,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   flex-shrink: 0;
   margin-top: 2px;
+  font-family: var(--font-display);
 }
 .steps-list li span { font-size: 0.9rem; color: var(--text-gray); line-height: 1.7; }
 
@@ -735,21 +767,23 @@ a { color: inherit; text-decoration: none; }
 }
 .workshop-card .tag {
   font-size: 0.68rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.5rem;
   display: block;
+  font-family: var(--font-display);
 }
 .workshop-card h3 { 
   font-size: 0.95rem; 
-  font-weight: 800; 
+  font-weight: 700; 
   margin-bottom: 0.6rem; 
   color: var(--black); 
+  font-family: var(--font-display);
 }
 .workshop-card p { font-size: 0.87rem; color: var(--text-gray); line-height: 1.65; margin-bottom: 1rem; }
-.workshop-meta { font-size: 0.78rem; color: var(--primary); font-weight: 700; }
+.workshop-meta { font-size: 0.78rem; color: var(--primary); font-weight: 700; font-family: var(--font-display); }
 
 .contact-grid {
   display: grid;
@@ -760,12 +794,13 @@ a { color: inherit; text-decoration: none; }
 .contact-form label {
   display: block;
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   margin-bottom: 0.35rem;
   margin-top: 1.2rem;
+  font-family: var(--font-display);
 }
 .contact-form label:first-child { margin-top: 0; }
 .contact-form input,
@@ -790,9 +825,9 @@ a { color: inherit; text-decoration: none; }
   color: var(--white);
   border: none;
   padding: 0.7rem 1.6rem;
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
@@ -816,7 +851,7 @@ a { color: inherit; text-decoration: none; }
 .team-card:last-child { border-bottom: none; }
 .team-card:nth-child(even) { background: var(--bg-mint); }
 .team-avatar { display: none; }
-.team-info strong { font-weight: 800; font-size: 0.9rem; color: var(--primary); display: block; }
+.team-info strong { font-weight: 700; font-size: 0.9rem; color: var(--primary); display: block; font-family: var(--font-display); }
 .team-info span { font-size: 0.8rem; color: var(--mid-gray); }
 
 @keyframes fadeUp {
