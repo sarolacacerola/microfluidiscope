@@ -1,6 +1,6 @@
 /* ===========================
    Microfluidiscope — style.css
-   Fun & School-Friendly Edition
+   Custom Color Edition
    =========================== */
 
 :root {
@@ -14,14 +14,14 @@
   --nav-h: 60px;
   --shadow: 0 2px 16px rgba(0,0,0,0.05);
 
-  /* New fun color palette */
-  --primary: #3b82f6;      /* bright blue */
-  --primary-dark: #2563eb;
-  --secondary: #f97316;    /* orange */
-  --accent: #8b5cf6;       /* purple */
-  --highlight: #fbbf24;    /* yellow */
-  --success: #10b981;      /* green */
-  --pink: #ec4899;         /* pink for fun accents */
+  /* Custom color palette */
+  --primary: #71905c;      /* sage green */
+  --primary-dark: #5a7348;
+  --secondary: #b6b416;    /* yellow-green */
+  --accent: #9cb95b;       /* light olive */
+  --highlight: #b6b416;    /* yellow-green for accents */
+  --success: #71905c;      /* sage green */
+  --pink: #9cb95b;         /* light olive for fun accents */
   
   /* Legacy variable aliases so old markup still works */
   --ink: #1a1a1a;
@@ -31,8 +31,8 @@
   --warm-white: #ffffff;
   --rust: #1a1a1a;
   --brown: #3d3d3d;
-  --sage: #6b6b6b;
-  --gold: #1a1a1a;
+  --sage: #71905c;
+  --gold: #b6b416;
   --shadow-lg: 0 8px 40px rgba(0,0,0,0.08);
 
   --font-display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -213,7 +213,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--off-white), #eef2ff);
+  background: linear-gradient(135deg, var(--off-white), #f0f5ea);
   overflow: hidden;
 }
 .hero-image-split img {
@@ -281,7 +281,7 @@ a { color: inherit; text-decoration: none; }
 .card-image {
   height: 200px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--off-white), #eef2ff);
+  background: linear-gradient(135deg, var(--off-white), #f0f5ea);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,7 +341,7 @@ a { color: inherit; text-decoration: none; }
 /* ---- PARTNERS with fun styling ---- */
 .partners {
   padding: 5rem 0;
-  background: linear-gradient(135deg, var(--off-white), #fef3e8);
+  background: linear-gradient(135deg, var(--off-white), #f5f8ef);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -520,7 +520,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   max-height: 480px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--off-white), #eef2ff);
+  background: linear-gradient(135deg, var(--off-white), #f0f5ea);
 }
 .component-hero-img img {
   width: 100%;
@@ -585,7 +585,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.87rem;
 }
 .bom-list li:last-child { border-bottom: none; }
-.bom-list li:nth-child(even) { background: linear-gradient(90deg, #fef3e8, var(--off-white)); }
+.bom-list li:nth-child(even) { background: linear-gradient(90deg, #f5f8ef, var(--off-white)); }
 .bom-item { font-weight: 700; color: var(--primary); }
 .bom-detail { color: var(--mid-gray); font-size: 0.82rem; text-align: right; }
 
@@ -611,7 +611,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--border);
 }
 .build-steps li:last-child { border-bottom: none; }
-.build-steps li:nth-child(even) { background: linear-gradient(90deg, #eef2ff, var(--off-white)); }
+.build-steps li:nth-child(even) { background: linear-gradient(90deg, #f0f5ea, var(--off-white)); }
 .build-steps li::before {
   content: counter(build);
   min-width: 24px;
@@ -647,7 +647,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---- REPO LINK BOX with colorful border ---- */
 .repo-link-box {
-  background: linear-gradient(135deg, var(--off-white), #eef2ff);
+  background: linear-gradient(135deg, var(--off-white), #f0f5ea);
   border: 1px solid var(--border);
   border-left: 4px solid var(--primary);
   border-radius: 16px;
@@ -824,7 +824,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--border);
 }
 .team-card:last-child { border-bottom: none; }
-.team-card:nth-child(even) { background: linear-gradient(90deg, #eef2ff, var(--off-white)); }
+.team-card:nth-child(even) { background: linear-gradient(90deg, #f0f5ea, var(--off-white)); }
 .team-avatar { display: none; }
 .team-info strong { font-weight: 800; font-size: 0.9rem; color: var(--primary); display: block; }
 .team-info span { font-size: 0.8rem; color: var(--mid-gray); }
